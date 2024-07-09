@@ -1,6 +1,6 @@
 # Processos Ágeis e Fundamentos de Teste
-![Badge](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen)
 ![banner](Assets/banner.png)
+![Badge](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen)
 ## Sobre o projeto
 
 Na primeira sprint, foi solicitado que adquirissemos conhecimento nas seguintes áreas:
