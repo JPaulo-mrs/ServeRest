@@ -16,7 +16,7 @@
 <a href="https://www.linkedin.com/in/joão-moura-7ab135209">
  <img alt="foto do autor" src="/Assets/eu.jpg" width="200px">
  <br />
- <sub><b>João Paulo de Moura</b></sub></a> <a href="https://www.linkedin.com/in/joão-moura-7ab135209/"></a>
+ <b>João Paulo de Moura</b></a> <a href="https://www.linkedin.com/in/joão-moura-7ab135209/"></a>
  <br />
 
 ## Sobre o projeto 💻
