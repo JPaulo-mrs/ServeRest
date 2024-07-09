@@ -18,4 +18,4 @@ Na primeira sprint, foi solicitado que adquirissemos conhecimento nas seguintes 
 Com esses conhecimentos, iremos ter uma base para todo o andamento da bolsa.
 
 ## Mapa da primeira sprint
-![Mapa mental](Assets/mapa.jpg)
+ <img alt="Mapa mental" src="/Sprint01/Assets/mapa.jpg" width="700px">
