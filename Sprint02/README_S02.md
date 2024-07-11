@@ -1,4 +1,4 @@
-# AWS For Software Quality e Test Automation
+# Sprint 2
 ![banner](/Assets/banner.png)
 ![Badge](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen)
 
