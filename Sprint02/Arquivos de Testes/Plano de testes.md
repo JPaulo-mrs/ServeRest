@@ -61,33 +61,20 @@
 - **T5-3 Não deve ser possível deletar novamente usuários já deletados** 
 
 ## Testes candidatos à automação
-De acordo com o objetivo da aplicação, foi observado que os end points: **T1 - Cadastrar usuários** e **T4 - Editar usuários** precisam ser priorizados, o que torna eles candidatos a automação
-
-## Critério de aceitação
-- Os vendedores (usuários) deverão possuir os campos NOME, E-MAIL, PASSWORD e ADMINISTRADOR;
-- Não deverá ser possível fazer ações e chamadas para usuários inexistentes;
-- Não deve ser possível criar um usuário com e-mail já utilizado;
-- Caso não seja encontrado usuário com o ID informado no PUT, um novo usuário deverá ser criado;
-- Não deve ser possível cadastrar usuário com e-mail já utilizado utilizando PUT;
-- Os testes executados deverão conter evidências;
-- Não deverá ser possível cadastrar usuários com e-mails de provedor gmail e hotmail;
-- Os e-mails devem seguir um padrão válido de e-mail para o cadastro;
-- As senhas devem possuír no mínimo 5 caracteres e no máximo 10 caracteres;
-- A cobertura de testes deve se basear no Swagger e ir além, cobrindo cenários alternativos.
+De acordo com o objetivo da aplicação, foi observado que os cenários: **T1 - Cadastrar usuários** e **T4 - Editar usuários** precisam ser priorizados, o que torna eles candidatos a automação.
 
 ## Matriz de rastreabilidade 
 
 | ID do requisito | Descrição do requisito | Caso teste relacionado |
 |---|---|---|
 | R1 | Os vendedores (usuários) deverão possuir os campos NOME, E-MAIL, PASSWORD e ADMINISTRADOR; | T1-2 |
-| R2 | Não deverá ser possível fazer ações e chamadas para usuários inexistentes; |  |
-| R3 | Não deve ser possível criar um usuário com e-mail já utilizado; |  |
-| R4 | Caso não seja encontrado usuário com o ID informado no PUT, um novo usuário deverá ser criado; |  |
-| R5 | Não deve ser possível cadastrar usuário com e-mail já utilizado utilizando PUT; |  |
-| R6 | Não deverá ser possível cadastrar usuários com e-mails de provedor gmail e hotmail; |  |
-| R7 | Os e-mails devem seguir um padrão válido de e-mail para o cadastro; |  |
-| R8 | As senhas devem possuír no mínimo 5 caracteres e no máximo 10 caracteres; |  | 
-| R9 | A cobertura de testes deve se basear no Swagger e ir além, cobrindo cenários alternativos. |  |
+| R2 | Não deverá ser possível fazer ações e chamadas para usuários inexistentes; | T2-3 T3-3 T4-4 T5-3 |
+| R3 | Não deve ser possível criar um usuário com e-mail já utilizado; | T1-3 |
+| R4 | Caso não seja encontrado usuário com o ID informado no PUT, um novo usuário deverá ser criado; | T4-2 |
+| R5 | Não deve ser possível cadastrar usuário com e-mail já utilizado utilizando PUT; | T4-3 |
+| R6 | Não deverá ser possível cadastrar usuários com e-mails de provedor gmail e hotmail; | T1-4 |
+| R7 | Os e-mails devem seguir um padrão válido de e-mail para o cadastro; | T1-5 |
+| R8 | As senhas devem possuír no mínimo 5 caracteres e no máximo 10 caracteres; | T1-6 | 
 
 ## Mapa mental
 
