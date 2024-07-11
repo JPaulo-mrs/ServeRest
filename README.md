@@ -2,7 +2,7 @@
 ![banner](/Assets/banner.png)
 ![Badge](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green)
 
-## ⚙️ Indice
+## Indice ⚙️
 - [Autor](#autor-️)
 - [Sobre o projeto](#sobre-o-projeto-)
   - [Sprint 1](/Sprint01/README_S01.md)
