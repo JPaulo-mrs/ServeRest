@@ -64,4 +64,4 @@
 - O cronograma é uma ferramenta comum no gerenciamento de projetos
 - ela determina quando as atividas a serem executadas em um projeto serão realizadas. Para isso, para cada uma delas dever -se indicar a data inicial e a data final
 
-Exem plo retirado do vídeo: https://youtu.be/toAl1NGsub8?si=TGU2DCOd5-e-HH2D
+Exemplo retirado do vídeo: https://youtu.be/toAl1NGsub8?si=TGU2DCOd5-e-HH2D
