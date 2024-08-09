@@ -11,7 +11,7 @@
     - [NPM](#npm)
     - [Postman](#postman)
   - [Instalação](#instalação)
-  - [Endpoints]()
+  - [Endpoints](#endpoints)
   - [Exemplo de testes automatizados]()
 - [Calculadora](#serverest)
   - [Dependências]()
@@ -227,3 +227,17 @@ npm start
             * `carrinho_id` (int): ID do carrinho.
         * **Resposta:**
             * **Sucesso:** Retorna um código de sucesso (ex: 200 - OK).
+
+### Exemplo de testes automatizados
+**teste de status code**
+
+![teste status code](/Assets/Teste1.png)
+
+Com esse script é possível testar automaticamente o status code do request enviado.
+
+**Request automático**
+
+![teste status code](/Assets/Teste2.png)
+
+Com esse script é possível enviar um request automaticamente. Esse script é muito útil para rotas que precisam estar autentificado.
+
