@@ -81,7 +81,7 @@ Para instalar o Postman, você pode seguir estes passos:
 Para instalar e configurar a api Serverest, você pode seguir estes passos:
 1. Clonando o repositório do Serverest:
 - Obtenha o link do repositório: Acesse o repositório do [Serverest](https://github.com/ServeRest/ServeRest) no GitHub, clique em code e depois em copiar.
-![imagem do github da serverest](image.png)
+![imagem do github da serverest](/Assets/image.png)
 - Clone o repositório: Abra o terminal e navegue até o diretório onde deseja clonar o projeto. Execute o seguinte comando, substituindo <link-do-repositorio> pelo link real do repositório:
 ~~~bash
 git clone <link-do-repositorio>
