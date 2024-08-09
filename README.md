@@ -103,3 +103,127 @@ npm start
 - Instale o Postman: Se você ainda não o fez, baixe e instale o Postman.
 - Importe o arquivo swagger.json: Abra o Postman e clique em "Import". Selecione o arquivo swagger.json que você baixou.
 - Explore a documentação: As coleções do Swagger serão importadas para o Postman. Você pode explorar a documentação da API e começar a fazer suas requisições.
+
+### Endpoints
+**Login:**
+
+* **Endpoint:** `/login`
+* **Método:** POST
+  * **Parâmetros:**
+    * `email` (string): E-mail do usuário.
+    * `senha` (string): Senha do usuário.
+  * **Resposta:**
+    * **Sucesso:** Retorna um token de autenticação para acesso à API.
+    * **Erro:** Retorna um código de erro e uma mensagem descritiva (ex: "Usuário ou senha inválidos").
+
+**Usuários:**
+
+* **Endpoint:** `/usuarios`
+* **Métodos:**
+    * **POST (Criar Usuário):**
+        * **Parâmetros:**
+            * `nome` (string): Nome completo do usuário.
+            * `email` (string): E-mail do usuário.
+            * `senha` (string): Senha do usuário.
+            * `administrador` (bool): verdadeiro ou falso.
+        * **Resposta:**
+            * **Sucesso:** Retorna o ID do usuário recém-criado.
+            * **Erro:** Retorna um código de erro e uma mensagem descritiva (ex: "E-mail já cadastrado").
+    * **GET (Listar Usuários):**
+        * **Parâmetros:** (opcional)
+            * `_id` (string): Filtra usuários pelo id.
+            * `nome` (string): Filtra usuários pelo nome.
+            * `email` (string): Filtra usuários pelo email.
+            * `senha` (string): Filtra usuários pela senha.
+            * `administrador` (string): Filtra usuários administradores ou não.
+        * **Resposta:** Retorna uma lista de usuários com seus IDs, nomes, emails, senhas e se é administrador ou não.
+    * **GET (Buscar Usuário por ID):**
+        * **Parâmetros:**
+            * `id` (int): ID do usuário a ser buscado.
+        * **Resposta:** Retorna os dados do usuário com o ID especificado.
+    * **DELETE (Excluir Usuário):**
+        * **Parâmetros:**
+            * `id` (int): ID do usuário a ser excluído.
+        * **Resposta:**
+            * **Sucesso:** Retorna um código de sucesso (ex: 200 - registro excluido).
+    * **PUT (Atualizar Usuário):**
+        * **Parâmetros:**
+            * `id` (int): ID do usuário a ser atualizado.
+            * `nome` (string): Novo nome do usuário.
+            * `email` (string): Novo email do usuário.
+            * `senha` (string): Nova senha do usuário.
+            * `administrador` (bool): Nova possibilidade de administrador.
+        * **Resposta:**
+            * **Sucesso:** Retorna um código de sucesso (ex: 200 - OK).
+
+**Produtos:**
+
+* **Endpoint:** `/produtos`
+* **Métodos:**
+    * **POST (Criar Produto):**
+        * **Parâmetros:**
+            * `nome` (string): Nome do produto.
+            * `preco` (float): Preço do produto.
+            * `descricao` (string): Descrição detalhada do produto.
+            * `quantidade` (int): Quantidade em estoque.
+        * **Resposta:**
+            * **Sucesso:** Retorna o ID do produto recém-criado.
+            * **Erro:** Retorna um código de erro e uma mensagem descritiva (ex: "Nome do produto já existe").
+    * **GET (Listar Produtos):**
+        * **Parâmetros:** (opcional)
+            * `id` (int): ID do produtos a ser atualizado.
+            * `nome` (string): Nome do produto.
+            * `preco` (float): Preço do produto.
+            * `descricao` (string): Descrição detalhada do produto.
+            * `quantidade` (int): Quantidade em estoque.
+        * **Resposta:** Retorna uma lista de produtos com seus IDs, nomes, preços, descrição e quantidade.
+    * **GET (Buscar Produto por ID):**
+        * **Parâmetros:**
+            * `id` (int): ID do produto a ser buscado.
+        * **Resposta:** Retorna os dados do produto com o ID especificado.
+    * **DELETE (Excluir Produto):**
+        * **Parâmetros:**
+            * `id` (int): ID do produto a ser excluído.
+        * **Resposta:**
+            * **Sucesso:** Retorna um código de sucesso (ex: 200 - OK).
+    * **PUT (Atualizar Produto):**
+        * **Parâmetros:**
+            * `id` (int): ID do produto a ser atualizado.
+            * `nome` (string): Novo nome do produto.
+            * `preco` (float): Novo preço do produto.
+            * `descricao` (string): Nova descrição do produto.
+            * `estoque` (int): Nova quantidade em estoque.
+        * **Resposta:**
+            * **Sucesso:** Retorna um código de sucesso (ex: 200 - OK).
+
+**Carrinhos:**
+
+* **Endpoint:** `/carrinhos`
+* **Métodos:**
+    * **POST (Criar Carrinho):**
+        * **Parâmetros:**
+            * `usuario_token` (int): Token do login do usuário.
+            * `produto_id` (int): ID do produto que vai para o carrinho.
+            * `quantidade` (int): Quantidade de produtos que vão para o carrinho.
+        * **Resposta:** Retorna o ID do carrinho recém-criado.
+    * **GET (Listar Carrinhos):**
+        * **Parâmetros:**
+            * `carrinho_id` (int): ID do carrinho para listar.
+            * `preco` (int): preço do produto para listar carrinhos.
+            * `quantidade` (int): qauntidade de produtos para listar carrinhos.
+            * `usuario_id` (int): ID do usuário para listar seu carrinho.
+        * **Resposta:** Retorna uma lista de carrinhos com seus IDs e informações relevantes.
+    * **GET (Buscar Carrinho por ID):**
+        * **Parâmetros:**
+            * `id` (int): ID do carrinho a ser buscado.
+        * **Resposta:** Retorna os dados do carrinho com o ID especificado.
+    * **POST (Concluir Compra):**
+        * **Parâmetros:**
+            * `carrinho_id` (int): ID do carrinho.
+        * **Resposta:**
+            * **Sucesso:** Retorna um código de sucesso (ex: 200 - OK).
+    * **DELETE (Cancelar Compra):**
+        * **Parâmetros:**
+            * `carrinho_id` (int): ID do carrinho.
+        * **Resposta:**
+            * **Sucesso:** Retorna um código de sucesso (ex: 200 - OK).
