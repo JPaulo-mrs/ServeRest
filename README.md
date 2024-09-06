@@ -11,9 +11,11 @@
     - [Node.js](#nodejs)
     - [NPM](#npm)
     - [Postman](#postman)
+    - [K6](#k6)
   - [Instalação](#instalação)
   - [Endpoints](#endpoints)
   - [Exemplo de testes automatizados](#exemplo-de-testes-automatizados)
+  - [Testes no K6](#testes-no-k6)
 - [Calculadora](#calculadora)
   - [Dependências](#dependências-1)
     - [Visual Studio Code](#vs-code-1)
@@ -38,7 +40,7 @@
 Para quem está começando em testes de API, a Serverest é uma ferramenta **essencial**. Ela oferece um ambiente **pronto e fácil de usar** para simular um e-commerce real, com endpoints completos e diversos cenários para testar. Com a Serverest, você pode **praticar seus conhecimentos** de testes de API, **explorar diferentes métodos HTTP** e **entender como funcionam as APIs** de forma prática e intuitiva. 
 
 ### Dependências
-![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)![nodejs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)![postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
+![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)![nodejs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)![postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)![K6](https://img.shields.io/badge/k6-7D64FF.svg?style=for-the-badge&logo=k6&logoColor=white)
 
 #### VS Code
 Para instalar o Visual Studio Code, siga estes passos:
@@ -76,6 +78,11 @@ Para instalar o Postman, você pode seguir estes passos:
 2. Execute o arquivo de instalação e siga as instruções na tela.
 3. Após a instalação, abra o Postman e faça login ou crie uma conta gratuita.
 
+#### K6
+Para instalar o K6, você pode seguir estes passos:
+
+1. Abra o Windows PowerShell.
+2. Execute o comando `winget install k6 --source winget`.
 
 ### Instalação
 Para instalar e configurar a api Serverest, você pode seguir estes passos:
@@ -247,6 +254,10 @@ Com esse script é possível testar automaticamente o status code do request env
 ![teste status code](/Assets/Teste2.png)
 
 Com esse script é possível enviar um request automaticamente. Esse script é muito útil para rotas que precisam estar autentificado.
+
+### Testes no K6
+Para executar os testes no K6 basta executar o arquivo do repositório **Executando testes.bat** e seguir as instruções.
+**Obs:** Para os testes na rota login e produtos, é necessário ter um usuário com email: fulano@qa.com e senha: teste.
 
 ## Calculadora
 A calculadora.js, permite o usuário realizar operações matemáticas, como: somar, subtrair, multiplicar, dividir, elevar e descobrir o fatorial de um número.
