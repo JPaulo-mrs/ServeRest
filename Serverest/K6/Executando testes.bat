@@ -16,14 +16,14 @@ echo 9. Soak Test - Realizar Login
 echo 10. Soak Test - Realizar Login
 echo 11. Soak Test - Listar Produtos
 echo 12. Soak Test - Fluxo
-echo 13. Stress Test - Realizar Login
-echo 14. Stress Test - Listar Usuários
-echo 15. Stress Test - Listar Produtos
-echo 16. Stress Test - Fluxo
-echo 17. Spike Test - Realizar Login
-echo 18. Spike Test - Listar Usuários
-echo 19. Spike Test - Listar Produtos
-echo 20. Spike Test - Fluxo
+echo 13. Spike Test - Realizar Login
+echo 14. Spike Test - Listar Usuários
+echo 15. Spike Test - Listar Produtos
+echo 16. Spike Test - Fluxo
+echo 17. Stress Test - Realizar Login
+echo 18. Stress Test - Listar Usuários
+echo 19. Stress Test - Listar Produtos
+echo 20. Stress Test - Fluxo
 echo 21. Sair
 echo =====================================
 set /p escolha="Digite o numero da sua escolha: "
