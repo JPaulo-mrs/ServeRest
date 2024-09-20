@@ -45,7 +45,6 @@ export function setup() {
   });
   const token = loginRes.json().authorization;
   const productRes = baseRest.post(ENDPOINTS.PRODUCTS_ENDPOINT, productPayload, token);
-  console.log(productRes.json()._id);
   group('Cadastrar produto', () => {
     baseChecks.checkStatusCode(productRes, 201);
     baseChecks.checkMessage(productRes, "Cadastro realizado com sucesso");
