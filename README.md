@@ -256,8 +256,19 @@ Com esse script é possível testar automaticamente o status code do request env
 Com esse script é possível enviar um request automaticamente. Esse script é muito útil para rotas que precisam estar autentificado.
 
 ### Testes no K6
-Para executar os testes no K6 basta executar o arquivo do repositório **Executando testes.bat** e seguir as instruções.
-**Obs:** Para os testes na rota login e produtos, é necessário ter um usuário com email: fulano@qa.com e senha: teste.
+Para executar os testes no K6 siga os seguintes passos:
+1. **Clonando o repositório:**
+- Obtenha o link do repositório: Acesse o [repositório](https://gitlab.com/JPaulo-mrs/serverest.git) no GitLab, clique em code e depois em copiar no Clone with HTTPS.
+- Clone o repositório: Abra o terminal e navegue até o diretório onde deseja clonar o projeto. Execute o seguinte comando, substituindo <link-do-repositorio> pelo link real do repositório:
+~~~bash
+git clone <link-do-repositorio>
+~~~
+- Os arquivos dos testes no K6 estão dentro da pasta "Serverest/K6".
+2. **Execute o arquivo guia**  
+- Abra a pasta do K6 e clique no arquivo **Executando testes.bat**.
+![alt text](Assets/k6.png)
+- Ao ser executado, o arquivo vai abrir uma lista com todas os testes disponíveis. Para executar um teste, basta digitar o número do teste escolhido e apertar enter.
+![alt text](Assets/image-1.png)
 
 ## Calculadora
 A calculadora.js, permite o usuário realizar operações matemáticas, como: somar, subtrair, multiplicar, dividir, elevar e descobrir o fatorial de um número.
